@@ -9,3 +9,7 @@ std::vector<int> primes(int n) {
     nums[0] = -1
     nums[1] = -1
     
+    for (int i = 0; i <= n; i++) {
+
+    }
+    
