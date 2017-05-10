@@ -2,7 +2,10 @@
 // Generate 10001 prime number
 // Author: Paul Stey
 // Date: 2017-05-06
+// Status: Solved
 // CXXFLAGS: -Wall
+
+
 
 #include <iostream>
 #include <string>
