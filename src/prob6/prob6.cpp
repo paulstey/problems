@@ -1,5 +1,5 @@
 // Proj Euler 6: Sum Square Difference
-// Fin difference between sum of squares and square of sums
+// Find difference between sum of squares and square of sums
 // Author: Paul Stey
 // Date: 2017-04-22
 // CXXFLAGS: -Wall
