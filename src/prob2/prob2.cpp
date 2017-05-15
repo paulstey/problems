@@ -29,7 +29,6 @@ long long int sum_even_fib(int n) {
 
 	std::swap(a, tmp);
 	if (is_even(b)) {
-	    //std::cout << runsum << std::endl;
 	    runsum += b;
 	}
     }
