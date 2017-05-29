@@ -10,21 +10,19 @@
 
 std::vector<int> primes(int n) {
     std::vector<bool> prime_flag(n + 1, true);   // init vector of all trues    
-    int i, j;
-
 
     // Cross out non-primes by removing all multiples of our existing primes.
     // The incrementing of the loop index `j` gives us multiples of our primes
-    for (i = 2; i*i <= n; i++) {
+    for (int i = 2; i*i <= n; i++) {
 	if (prime_flag[i] == true) {
-	    for (j = i*2; j <= n; j += i) {
+	    for (int j = i*2; j <= n; j += i) {
 		prime_flag[j] = false;
 	    }
 	}
     }
 
     std::vector<int> res;
-    for (i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++) {
 	if (prime_flag[i] == true) {
 	    res.push_back(i);
 	}
