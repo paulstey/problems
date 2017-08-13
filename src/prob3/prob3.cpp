@@ -1,7 +1,7 @@
 // Project Euler: Problem 3
 // Author: Paul Stey
 // Date: 2017-05-21
-// CXXFLAGS: -std=c++11
+// CXXFLAGS: -std=c++11 -Wall
 // Status: in progress...
 
 #include <iostream>
