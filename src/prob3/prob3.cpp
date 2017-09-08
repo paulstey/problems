@@ -8,6 +8,7 @@
 #include <vector>
 
 
+
 std::vector<int> primes(int n) {
     std::vector<bool> prime_flag(n + 1, true);   // init vector of all trues    
 
@@ -38,7 +39,6 @@ int get_input() {
     std::cout << "Checking up to " << n << std::endl;
     return n;
 }
-
 
 
 int main() {
