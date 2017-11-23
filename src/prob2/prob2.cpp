@@ -3,13 +3,18 @@
 // numbers less than sum specified value
 // Author: Paul Stey
 // Date: 2017-03-25
+// CXXFLAGS: -Wall -Wpedantic
+// Status:
 
-#include<iostream>
-#include<algorithm>    // std::swap()
-#include<ctime>
+#include <iostream>
+#include <algorithm>    // std::swap()
+#include <ctime>
+
+
 
 bool is_even(int n) {
     bool res = false;
+    
     if (n % 2 == 0) {
 	res = true;
     }
@@ -17,13 +22,12 @@ bool is_even(int n) {
 }
 
 
-long long int sum_even_fib(int n) {
-    long long int a, b, tmp;
-    int i;
+int64_t sum_even_fib(int n) {
+    int64_t a, b, tmp;
     a = 1;
     b = 1;
-    long long int runsum = 0;
-    for (i = 3; b <= n; i++) {
+    int64_t runsum = 0;
+    for (size_t i = 3; b <= n; i++) {
 	tmp = b;                
 	b = a + b;
 
@@ -48,7 +52,7 @@ int main() {
     int n = get_input();
 
     clock_t t0 = clock();
-    long long int res = sum_even_fib(n);
+    int64_t res = sum_even_fib(n);
     clock_t runtime = clock() - t0;
 
     std::cout << res << std::endl;
